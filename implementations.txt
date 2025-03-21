@@ -1,0 +1,12 @@
+arrow fun
+const let var diff 
+js es6 features
+events (mouse,keybords)
+animation lib => swiper js
+gothem
+========================================
+alignment  =>  done 
+font chanege to gothem =>  done 
+responsive  =>  done 
+animations  using swipper library  => 
+side bars  => 

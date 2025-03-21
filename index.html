@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Make Cool Websites</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+      
+        <!-- library for the gothem font  -->
+        <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400&family=Gotham+Light:wght@300&display=swap" rel="stylesheet">
+        <style>
+    /* Custom font class */
+.gotham-font {
+    font-family: 'Gotham', sans-serif !important;
+}
+
+.gotham-light-font {
+    font-family: 'Gotham Light', sans-serif !important;
+}
+        </style>
+    </head>
+    <body>
+        <!----------------------------------------------------  HOME PAGE ------------------------------------------------>
+        <header class="text-light py-3 gotham-font" style="background-color: #032523;">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo Section -->
+                <div class="logo fs-4 fw-bold" style="font-family: Nunito; font-size: 24px; font-weight: 400;">
+                    LOGO
+                </div>
+                <!-- Navigation Section for Desktop and Tablet -->
+                <nav class="d-none d-md-flex flex-grow-1 justify-content-center align-items-center" style="font-family: 'Gotham Light', sans-serif; font-size: 1.5rem;">
+                    <a href="#about" class="text-decoration-none mx-3" style="color: gray;">About</a>
+                    <a href="#services" class="text-decoration-none mx-3" style="color: gray;">Services</a>
+                    <a href="#projects" class="text-decoration-none mx-3" style="color: gray;">Projects</a>
+                    <a href="#blogs" class="text-decoration-none mx-3" style="color: gray;">Blogs</a>
+                    <a href="#contact" class="text-decoration-none mx-3" style="color: gray;">Contact</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button
+                    class="btn btn-light d-md-none ms-auto"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu"
+                >
+                    <img src="menu.png" alt="Menu Icon" style="width: 24px; height: 24px;">
+                </button>
+
+
+
+                
+                <!-- Button Section -->
+                <button class="btn btn-success ms-3 px-4 py-2" style="background-color: #0EBAB1; border-color: #0EBAB1;">
+                    Get Your Quote
+                </button>
+            </div>
+            <!-- Offcanvas Mobile Menu -->
+            <!-- Offcanvas Mobile Menu -->
+            <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="mobileMenu"
+                aria-labelledby="mobileMenuLabel"
+            >
+                <div class="offcanvas-header">
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="offcanvas-body" style="font-family: 'Gotham Light', sans-serif;">
+                    <a href="#about" class="d-block text-decoration-none py-2 menu-link" style="color: gray;">About</a>
+                    <a href="#services" class="d-block text-decoration-none py-2 menu-link" style="color: gray;">Services</a>
+                    <a href="#projects" class="d-block text-decoration-none py-2 menu-link" style="color: gray;">Projects</a>
+                    <a href="#blogs" class="d-block text-decoration-none py-2 menu-link" style="color: gray;">Blogs</a>
+                    <a href="#contact" class="d-block text-decoration-none py-2 menu-link" style="color: gray;">Contact</a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </header>
+        <!-------------------------------------------- HERO SECTION ------------------------------------------------------->
+        <div class="hero-section d-flex align-items-center justify-content-center text-center text-light bg-dark" style="position: relative; height: 100vh; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background_img.png') no-repeat center/cover;">
+            <div class="p-5 rounded">
+                <h1 class="fw-bold display-4">Transforming Ideas into</h1>
+                <h1 class="fw-bold" style="color: #0EBAB1; font-family: Gotham; font-size: 84px; font-weight: 700; line-height: 90px; text-align: center; text-underline-position: from-font; text-decoration-skip-ink: none;">Digital Excellence</h1>
+                <p class="fs-5 mt-3">
+                    From concept to deployment, we deliver tailored solutions that transform your business,
+                    <br>
+                    enhancing performance and achieving real results.
+                </p>
+                <div class="mt-4">
+                    <!-- <a href="#" class="btn btn-primary btn-lg mx-2" style="background-color: #075D58;">Discover More</a> -->
+                    <a href="#" class="btn btn-primary btn-lg mx-2" style="background-color: #075D58; outline: none; border: none;">Discover More</a>
+                    <a href="#" class="btn btn-outline-light btn-lg mx-2" style="background-color: #CFF1EF; color: black;">Book Call Now</a>
+                </div>
+                <div style="
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 70px; /* Vertical position */
+            left: -150px; /* Half the width of the div to push it half outside horizontally */
+            gap: 0px;
+            border-radius: 20px 0px 0px 0px;
+            opacity: 1; /* Fully visible */
+            transform: rotate(132.55deg);
+            background-color: #075D58B2; /* Semi-transparent green */
+        "></div>
+            </div>
+        </div>
+        <!----------------------------------------------------------------- ABOUT SECTION  ----------------------------------------->
+        <section id="about" class="gotham-font" style="background-color: #032523; height: auto; margin: 0; padding: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+            <div class="container px-4">
+                <div class="row align-items-center g-4">
+                    <!-- Left Column: Image -->
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="text-center" style="padding: 20px;">
+                            <img
+                                src="img1.png"
+                                alt="Illustration"
+                                class="img-fluid"
+                                style="max-width: 100%; height: auto;"
+                            >
+                        </div>
+                    </div>
+                    <!-- Right Column: Text Content -->
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <h5 style="color: #FFFFFF; text-transform: uppercase;">About us</h5>
+                        <h2 style="font-family: Gotham; font-size: 50px; font-weight: 900; line-height: 1.2; color: white;">
+                            Our Journey of
+                            <br>
+                            <span style="color: #0EBAB1;">Innovation</span>
+                        </h2>
+                        <p style="font-size: 16px; line-height: 1.5; color: #FFFFFF;">
+                            At [Company Name], we revolutionize how businesses leverage technology to achieve their goals. With a foundation built on innovation and expertise, we are dedicated to delivering customized digital solutions that drive efficiency and produce tangible results.
+                        </p>
+                        <ul class="list-unstyled" style="font-size: 16px; color: #FFFFFF; list-style-type: disc; padding-left: 20px;">
+                            <li>Founded by passionate innovators</li>
+                            <li>Specialize in custom software and seamless integrations</li>
+                            <li>Drive efficiency and deliver tangible results</li>
+                            <li>Collaborative approach to understand your unique needs</li>
+                            <li>Dedicated to staying ahead of technological advancements</li>
+                            <li>Committed to building lasting relationships and your success</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-light mt-3" style="background-color: #CFF1EF; border-radius: 0.5rem; color:black;">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!------------------------------------------------------------------ SERVICES SECTION  ------------------------------------->
+        <!------------------------------ Services Section1 ----------------------->
+        <section id="services" class="py-5   gotham-font">
+            <div class="container text-center">
+                <p class="text-uppercase text-secondary mb-2">Our Services</p>
+                <h2 class="fw-bold">
+                    Solutions for Your
+                    <br>
+                    <span style="color:#0EBAB1">Success</span>
+                </h2>
+                <p class="text-muted mb-5">
+                    Empowering your business with tailored, expert services designed to enhance efficiency,
+                    <br>
+                    drive growth, and achieve outstanding results.
+                </p>
+                <div class="row g-4">
+                    <!-- Website Development -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex flex-column justify-content-evenly text-center p-3" style="background-color: #CFF1EFE5; min-height: 450px; transition: transform 0.3s ease;">
+                            <img src="wesbite_development_logo.png" class="mb-3 mx-auto" style="width: 60px;">
+                            <h5 class="fw-bold">Website Development</h5>
+                            <p class="text-muted">
+                                Explore our new real estate website, designed for intuitive navigation and comprehensive property listings, simplifying your search for homes and investments.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Mobile Development -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex flex-column justify-content-evenly text-center p-3" style="background-color: #CFF1EFE5; min-height: 450px; transition: transform 0.3s ease;">
+                            <img src="mobile_development_logo.png" class="mb-3 mx-auto" style="width: 60px;">
+                            <h5 class="fw-bold">Mobile App Development</h5>
+                            <p class="text-muted">
+                                Discover our SaaS web and app platform, delivering seamless functionality and user-friendly interfaces for enhanced business efficiency and productivity.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- UI/UX Design -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex flex-column justify-content-evenly text-center p-3" style="background-color: #CFF1EFE5; min-height: 450px; transition: transform 0.3s ease;">
+                            <img src="ui_design_logo.png" class="mb-3 mx-auto" style="width: 60px;">
+                            <h5 class="fw-bold">UI/UX Designing</h5>
+                            <p class="text-muted">
+                                Experience convenience and security with our banking mobile app. Manage finances, make transactions, and stay informed with user-friendly features designed for seamless banking on-the-go.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!------------------------------ Services Section2 ---------------------->
+        <section class="py-5  gotham-font" style="background-color: #032523;">
+            <br>
+            <br>
+            <br>
+            <div class="container text-center text-white">
+                <!-- Heading -->
+                <p class="text-uppercase mb-2" style="color: white;">Our Services</p>
+                <h2 class="fw-bold mb-3" style="color: white;">
+                    Explore Our
+                    <span style="color: #00D1B2;">Work</span>
+                </h2>
+                <p class="mb-5" style="color: white;">
+                    Explore our diverse portfolio showcasing successful projects across industries, highlighting our innovation, expertise,
+                    <br>
+                    and client success stories.
+                </p>
+                <!-- Carousel Section -->
+                <div
+                    id="dynamicCarousel"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    style="overflow: visible;"
+                >
+                    <div class="carousel-inner" id="carouselContent" style="overflow: visible;">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active" style="overflow: visible;">
+                            <div class="row text-center" style="overflow: visible;">
+                                <!-- Box 1 -->
+                                <div class="col-md-4">
+                                    <div style="position: relative; margin: auto; width: 300px; height: 250px; overflow: visible;">
+                                        <!-- Number displayed outside the box -->
+                                        <h3 style="font-size: 4rem; font-weight: bold; position: absolute; top: -40px; left: -20px; color: white; z-index: 10;">01</h3>
+                                        <!-- Box -->
+                                        <div class="bg-dark rounded" style="height: 100%;"></div>
+                                    </div>
+                                    <!-- Text below the box -->
+                                    <div class="mt-3">
+                                        <h4 class="fw-bold text-white">Real Estate Website</h4>
+                                        <p class="text-white text-muted text-start m-0">
+                                            Explore our new real estate website, designed for intuitive navigation and comprehensive property listings, simplifying your search for homes and investments.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Box 2 -->
+                                <div class="col-md-4">
+                                    <div style="position: relative; margin: auto; width: 300px; height: 250px; overflow: visible;">
+                                        <!-- Number displayed outside the box -->
+                                        <h3 style="font-size: 4rem; font-weight: bold; position: absolute; top: -40px; left: -20px; color: white; z-index: 10;">02</h3>
+                                        <!-- Box -->
+                                        <div class="bg-dark rounded" style="height: 100%;"></div>
+                                    </div>
+                                    <!-- Text below the box -->
+                                    <div class="mt-3">
+                                        <h4 class="fw-bold text-white">SaaS Web & Mobile App</h4>
+                                        <p class="text-white text-muted text-md-start m-0">
+                                            Discover our SaaS web and app platform, delivering seamless functionality and user-friendly interfaces for enhanced business efficiency and productivity.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Box 3 -->
+                                <div class="col-md-4">
+                                    <div style="position: relative; margin: auto; width: 300px; height: 250px; overflow: visible;">
+                                        <!-- Number displayed outside the box -->
+                                        <h3 style="font-size: 4rem; font-weight: bold; position: absolute; top: -40px; left: -20px; color: white; z-index: 10;">03</h3>
+                                        <!-- Box -->
+                                        <div class="bg-dark rounded" style="height: 100%;"></div>
+                                    </div>
+                                    <!-- Text below the box -->
+                                    <div class="mt-3">
+                                        <h4 class="fw-bold text-white">Banking Mobile App</h4>
+                                        <p class="text-white text-muted text-md-start m-0">
+                                            Experience convenience and security with our banking mobile app. Manage finances, make transactions, and stay informed with user-friendly features designed for seamless banking on-the-go.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!-- Divider Lines -->
+                <div class="text-center mt-4" style="display: flex; justify-content: center; align-items: center; cursor: pointer;" id="dividerLines">
+                    <div style="width: 40px; height: 4px; background-color: white; margin-right: 4px;"></div>
+                    <div style="width: 40px; height: 4px; background-color: gray;"></div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+        </section>
+        <script>
+  // Data for all slides
+const slidesData = [
+  [
+    {
+      id: '01',
+      title: 'Real Estate Website',
+      description: 'Explore our new real estate website, designed for intuitive navigation and comprehensive property listings, simplifying your search for homes and investments.'
+    },
+    {
+      id: '02',
+      title: 'SaaS Web & Mobile App',
+      description: 'Discover our SaaS web and app platform, delivering seamless functionality and user-friendly interfaces for enhanced business efficiency and productivity.'
+    },
+    {
+      id: '03',
+      title: 'Banking Mobile App',
+      description: 'Experience convenience and security with our banking mobile app. Manage finances, make transactions, and stay informed with user-friendly features designed for seamless banking on-the-go.'
+    }
+  ],
+  [
+    {
+      id: '04',
+      title: 'E-Commerce Platform',
+      description: 'Launch your e-commerce business with our user-friendly platform, offering seamless integration with payment gateways and inventory management for hassle-free operations.'
+    },
+    {
+      id: '05',
+      title: 'Social Media Network',
+      description: 'Connect with friends and family through our secure and feature-rich social media platform, designed for seamless sharing and engaging experiences.'
+    },
+    {
+      id: '06',
+      title: 'Food Delivery App',
+      description: 'Order your favorite meals from local restaurants with our convenient food delivery app, offering real-time tracking and multiple payment options.'
+    }
+  ]
+];
+
+// Track current slide index
+let currentSlideIndex = 0;
+
+// Function to render the slides based on index
+function renderSlides(index) {
+  const carouselContent = document.getElementById('carouselContent');
+  carouselContent.innerHTML = ''; // Clear previous slides
+
+  const currentSlideSet = slidesData[index]; // Get the current set of slides
+  const slideDiv = document.createElement('div');
+  slideDiv.classList.add('carousel-item', 'active');
+
+  let rowContent = '<div class="row text-center">';
+  currentSlideSet.forEach(slide => {
+    rowContent += `
+      <div class="col-md-4">
+        <!-- Box with number -->
+        <div style="position: relative; margin: auto; width: 300px; height: 250px; overflow: visible;">
+          <h3 style="font-size: 4rem; font-weight: bold; position: absolute; top: -40px; left: -20px; color: white; z-index: 10;">${slide.id}</h3>
+          <div style="background-color: #394E50; border-radius: 10px; height: 100%;"></div>
+        </div>
+        <!-- Text below the box -->
+        <div style="margin-top: 20px;">
+          <h4 style="font-size: 1.25rem; font-weight: bold; color: white;">${slide.title}</h4>
+          <p style="font-size: 0.9rem; color: white;">${slide.description}</p>
+        </div>
+      </div>
+    `;
+  });
+  rowContent += '</div>';
+
+  slideDiv.innerHTML = rowContent;
+  carouselContent.appendChild(slideDiv);
+}
+
+// Handle Divider Click
+document.getElementById('dividerLines').addEventListener('click', () => {
+  currentSlideIndex = (currentSlideIndex + 1) % slidesData.length; // Cycle through slides
+  renderSlides(currentSlideIndex);
+});
+
+// Initial render
+renderSlides(currentSlideIndex);
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!----------------------------------- ECHOES OF EXCELLENCE --------------------->
+     
+
+
+        
+
+
+
+
+        <section id="projects" class="container text-center   gotham-font  my-5">
+            <h5 class="text-uppercase text-muted">Our Services</h5>
+            <!-- <h1 class="fw-bold " style="font-weight: bolder; ">Echoes of <span style="color:#0EBAB1">Excellence</span></h1> -->
+            <h1 class="fw-bold" style="font-weight: bolder; letter-spacing: 3px;">
+                Echoes of
+                <span style="color:#0EBAB1;">Excellence</span>
+            </h1>
+            <p class="text-secondary">
+                Discover how we've made a difference for our clients. Read their success
+                <br>
+                stories and experiences with our services and solutions.
+            </p>
+        </section>
+        <div class="position-relative text-white p-5 mt-5" style="background-color: #032523; overflow: visible; height: 330px; ">
+            <div class="row justify-content-center align-items-center">
+                <!-- Image and Border -->
+                <div class="position-absolute" style="top: 50%; left: 30%; transform: translate(-50%, -50%); z-index: 1; width: 300px; position: relative;">
+                    <img
+                        id="testimonialImage"
+                        src="person_img1.png"
+                        alt="Person"
+                        class="w-100 position-relative"
+                        style="border-radius: 19px; display: block;"
+                    >
+                    <div class="border-container" style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; border: 3px solid #0EBAB1; border-radius: 17px; pointer-events: none;"></div>
+                </div>
+                <!-- Testimonial Content -->
+                <div class="ps-5" style="margin-left: 30%; max-width: 50%;">
+                    <p id="testimonialText" class="mb-4">
+                        <strong>[Software House Name]</strong>
+                        transformed our business. Their
+                        <br>
+                        knowledgeable team delivered a superior product that exceeded expectations.
+                        <br>
+                        Communication was smooth, deadlines were met, and
+                        <br>
+                        post-launch support was fantastic. Highly recommend their services!
+                    </p>
+                    <p id="testimonialAuthor" class="mb-0">
+                        <strong>John Smith</strong>
+                    </p>
+                    <p id="testimonialTitle" class="mb-0" style="color:gray">CEO of Tech Innovators</p>
+                    <p id="testimonialLocation" class="mb-0" style="color:gray">New York, USA</p>
+                </div>
+                <!-- Scrolling Dots -->
+                <div class="d-flex justify-content-center mt-3" style="position: relative; left: -6%;">
+                    <span class="rounded-circle me-2 dot" style="width: 10px; height: 10px; background-color: #86d9d1; transition: background-color 0.3s; cursor: pointer;" onclick="changeTestimonial(0)"></span>
+                    <span class="rounded-circle me-2 dot" style="width: 10px; height: 10px; background-color: #86d9d1; transition: background-color 0.3s; cursor: pointer;" onclick="changeTestimonial(1)"></span>
+                    <span class="rounded-circle me-2 dot" style="width: 10px; height: 10px; background-color: #86d9d1; transition: background-color 0.3s; cursor: pointer;" onclick="changeTestimonial(2)"></span>
+                    <span class="rounded-circle dot" style="width: 10px; height: 10px; background-color: #86d9d1; transition: background-color 0.3s; cursor: pointer;" onclick="changeTestimonial(3)"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+    <!-- JavaScript -->
+    <script>
+                  // Array to store testimonials
+                  const testimonials = [
+                    {
+                      image: "person_img.png",
+                      text: "<strong>[Software House Name]</strong> transformed our business. Their knowledgeable team delivered a superior product that exceeded expectations. Communication was smooth, deadlines were met, and post-launch support was fantastic. Highly recommend their services!",
+                      author: "John Smith",
+                      title: "CEO of Tech Innovators",
+                      location: "New York, USA",
+                    },
+                    {
+                      image: "person_img.png",
+                      text: "<strong>[Company Name]</strong>  lowkeufvbw  wkeyvbgfiuweryvfweurg revolutionized our operations. Their experienced team crafted an outstanding solution that surpassed goals. Collaboration was seamless, timelines were respected, and ongoing support is excellent. Strongly endorse their expertise!",
+                      author: "Jane Doe",
+                      title: "CTO, Startup World",
+                      location: "San Francisco, USA",
+                    },
+                    {
+                      image: "person_img.png",
+                      text: "<strong>[Software House Name]</strong> transformed our business. Their knowledgeable team delivered a superior product that exceeded expectations. Communication was smooth, deadlines were met, and post-launch support was fantastic. Highly recommend their services!",
+                      author: "Emily Brown",
+                      title: "Manager, Enterprise Solutions",
+                      location: "London, UK",
+                    },
+                    {
+                      image: "person_img.png",
+                      text: "<strong>[Company Name]</strong>  lowkeufvbw  wkeyvbgfiuweryvfweurg revolutionized our operations. Their experienced team crafted an outstanding solution that surpassed goals. Collaboration was seamless, timelines were respected, and ongoing support is excellent. Strongly endorse their expertise!",
+                      author: "Michael Scott",
+                      title: "Regional Manager",
+                      location: "Scranton, USA",
+                    },
+                  ];
+                
+                  // Function to change testimonials
+                  function changeTestimonial(index) {
+                    // Update image
+                    document.getElementById("testimonialImage").src = testimonials[index].image;
+                
+                    // Update text content
+                    document.getElementById("testimonialText").innerHTML = testimonials[index].text;
+                    document.getElementById("testimonialAuthor").textContent = testimonials[index].author;
+                    document.getElementById("testimonialTitle").textContent = testimonials[index].title;
+                    document.getElementById("testimonialLocation").textContent = testimonials[index].location;
+                
+                    // Update dot colors
+                    const dots = document.querySelectorAll(".dot");
+                    dots.forEach((dot, idx) => {
+                      dot.style.backgroundColor = idx === index ? "#0EBAB1" : "#86d9d1";
+                    });
+                  }
+                
+                  // Set default active dot
+                  changeTestimonial(0);
+    </script>
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--------------------------------------------------------------- BLOG SECTION ---------------------------------------------------->
+    <div id="blogs" class="container my-5   gotham-font text-center">
+        <h5 class="text-secondary">Our Blog</h5>
+        <h1 style="font-size: 2.5em; font-weight: 1000; letter-spacing: 2px;">
+            Inspiration And
+            <span style="color:#0EBAB1;">Innovation</span>
+        </h1>
+        <p class="text-muted">Stay Updated with Our Latest Posts and Dive Deep into Industry Insights</p>
+        <br>
+        <br>
+        <!-- cards -->
+        <div class="row mt-4">
+            <!-- Blog Card 1 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card" style="position: relative; overflow: hidden; width: 100%; height: 522px; border-radius: 20px 0px 0px 0px;">
+                    <img
+                        src="blog1.jpeg"
+                        class="card-img-top"
+                        alt="Boost your conversation rate"
+                        style="width: 100%; height: 100%; object-fit: cover;"
+                    >
+                    <div class="card-body" style="position: absolute; bottom: 10px; left: 10px; color: white; display: flex; flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <div>
+                            <p class="mb-2" style="color: gray; margin: 0;">Mar 16, 2023</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <img src="uncle1.png" alt="Profile" style="width: 50px; height: 50px; border-radius: 50%;">
+                            <p class="card-text mb-0" style="margin: 0;">Michael Foster</p>
+                        </div>
+                        <div>
+                            <p class="card-text" style="margin: 0; font-weight: bold;">Boost your conversation rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Card 2 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card" style="position: relative; overflow: hidden; width: 100%; height: 522px; border-radius: 20px 0px 0px 0px;">
+                    <img
+                        src="blog2.jpeg"
+                        class="card-img-top"
+                        alt="How to use SEO to drive sales"
+                        style="width: 100%; height: 100%; object-fit: cover;"
+                    >
+                    <div class="card-body" style="position: absolute; bottom: 10px; left: 10px; color: white; display: flex; flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <div>
+                            <p class="mb-2" style="color: gray; margin: 0;">Apr 05, 2023</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <img src="uncle2.png" alt="Profile" style="width: 50px; height: 50px; border-radius: 50%;">
+                            <p class="card-text mb-0" style="margin: 0;">Michael Foster</p>
+                        </div>
+                        <div>
+                            <p class="card-text" style="margin: 0; font-weight: bold;">How to use SEO to drive sales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Card 3 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card" style="position: relative; overflow: hidden; width: 100%; height: 522px; border-radius: 20px 0px 0px 0px;">
+                    <img
+                        src="blog3.png"
+                        class="card-img-top"
+                        alt="Improve your customer experience"
+                        style="width: 100%; height: 100%; object-fit: cover;"
+                    >
+                    <div class="card-body" style="position: absolute; bottom: 10px; left: 10px; color: white; display: flex; flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <div>
+                            <p class="mb-2" style="color: gray; margin: 0;">Jun 09, 2024</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <img src="uncle2.png" alt="Profile" style="width: 50px; height: 50px; border-radius: 50%;">
+                            <p class="card-text mb-0" style="margin: 0;">Michael Foster</p>
+                        </div>
+                        <div>
+                            <p class="card-text" style="margin: 0; font-weight: bold;">Improve your customer experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!---------------------------------------------------------------  CALL TO ACTION SECTION  -------------------------------------------------->
+<div class="container text-center my-6  gotham-font" style="display:flex; justify-content: space-around;">
+    <h1 style="font-weight: bold;">
+        Time To Discuss Your
+        <span style="color:#0EBAB1">Project...</span>
+    </h1>
+    <a href="#" class="btn  mt-3" style="background-color: #075D58; color:white">Contact Now</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!------------------------------------------------------------------ FOOTER SECTION -------------------------------------------------------------->
+<footer id="contact" class="text-white py-3 mb-0  gotham-font" style="background-color: #032523;">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row gy-5 justify-content-between">
+            <!-- Logo and Description -->
+            <div class="col-12 col-md-3 text-center text-md-start">
+                <h5 class="mb-3">LOGO</h5>
+                <p class="mt-2 mb-4">From concept to deployment, we deliver tailored solutions that transform your business, enhancing performance and achieving real results.</p>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="#" class="me-3">
+                        <img src="facebook.png" alt="Facebook" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+                    </a>
+                    <a href="#" class="me-3">
+                        <img src="insta.png" alt="Instagram" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+                    </a>
+                    <a href="#" class="me-3">
+                        <img src="linkdin.png" alt="LinkedIn" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+                    </a>
+                    <a href="#">
+                        <img src="twitter.png" alt="Twitter" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+                    </a>
+                </div>
+            </div>
+            <!-- Solutions -->
+            <div class="col-6 col-md-2 text-center text-md-start">
+                <h6 class="mb-3">Solutions</h6>
+                <ul class="list-unstyled mt-2">
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Marketing</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Analytics</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Commerce</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Insight</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Support -->
+            <div class="col-6 col-md-2 text-center text-md-start">
+                <h6 class="mb-3">Support</h6>
+                <ul class="list-unstyled mt-2">
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Pricing</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Documentation</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Guides</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">API Status</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Company -->
+            <div class="col-6 col-md-2 text-center text-md-start">
+                <h6 class="mb-3">Company</h6>
+                <ul class="list-unstyled mt-2">
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">About</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Job</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Press</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Partners</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Legal -->
+            <div class="col-6 col-md-2 text-center text-md-start">
+                <h6 class="mb-3">Legal</h6>
+                <ul class="list-unstyled mt-2">
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Claim</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Privacy</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Footer Bottom -->
+    <div class="text-center mt-3 pt-2" style="border-top: 1px solid #ffffff;">
+        <p class="mb-0">All copyrights are reserved by ©Logo 2024</p>
+    </div>
+</footer>
+<!----------------------------------------- Bootstrap JS ---------------------->
+<script>
+    // Function to close the offcanvas menu and smoothly scroll to the target section
+    document.querySelectorAll('.menu-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default anchor click behavior
+
+            const targetId = this.getAttribute('href'); // Get the target section's ID
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                // Close the offcanvas menu
+                const offcanvasElement = document.querySelector('#mobileMenu');
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                offcanvasInstance.hide();
+
+                // Smoothly scroll to the target section
+                setTimeout(() => {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }, 300); // Delay to allow the menu closing animation
+            }
+        });
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper JS -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>

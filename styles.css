@@ -1,0 +1,135 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.header {
+  background-color: #032523;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+
+  z-index: 2;
+}
+.header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 100px;
+  color: white;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header .nav {
+  display: flex;
+  align-items: space-between;
+}
+
+.header .nav a {
+  margin-left: 20px;
+  margin-right: 70px;
+  color: darkgray;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header .button {
+  background-color: #0ebab1;
+  color: white;
+
+  border-radius: 0.5pc;
+  margin-right: 200px;
+  height: 50px;
+  width: 150px;
+}
+/***************** hero section css  ***********************/
+/* styles.css */
+
+.hero-section {
+  position: relative;
+  background: url("background_img.png") no-repeat center center/cover; /* Replace with your background image URL */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Bring content above overlay */
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.highlight-text {
+  font-size: 2.5rem;
+
+  font-weight: bold;
+  color: #0EBAB1; /* Green highlight color */
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-group .btn {
+  margin: 0 0.5rem;
+}
+
+.btn-primary {
+    background-color: #075d58;
+    color: white;
+    margin-right: 200px;
+    height: 300px; /* Increase height */
+    width: 300px;  /* Increase width */
+    font-size: 1.5rem; /* Optional: Adjust text size for balance */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    padding: 20px; /* Optional: Add internal spacing */
+     text-decoration: none;
+}
+  
+  .btn-outline-light {
+    border: 3px solid #fff; /* Thicker border for emphasis */
+    color : #212121;
+    padding: 15px 30px; /* Adjust internal spacing */
+    font-size: 1.5rem; /* Optional: Larger font size */
+    border-radius: 10px; /* Match rounded corners */
+    text-decoration : none;  
+    background-color: #CFF1EF;
+}
+  
